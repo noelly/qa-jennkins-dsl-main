@@ -588,17 +588,16 @@ envFolders.each{ env ->
       definition {
         cps {
           script('''
-pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-            }
-        }
-    }
-}
+                pipeline {
+                  agent any
+              stages {
+                  stage('Hello') {
+                  steps {
+                  sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
+                      } 
+                    }
+                  }
+                }
           ''' 
           )
         }

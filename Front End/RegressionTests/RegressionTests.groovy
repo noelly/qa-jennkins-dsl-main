@@ -1066,115 +1066,16 @@ envFolders.each{ env ->
       definition {
         cps {
           script('''
-            pipeline {
-              agent {
-                kubernetes {
-                  inheritFrom 'qa-automation-npm'
-                  label 'npm'
-                  yaml ''' + "${tool}" + '''
-                  spec:
-                    containers:
-                      - name: npm
-                        image: 363308097987.dkr.ecr.us-west-2.amazonaws.com/jenkins-slave:node-05-15-2022
-                        command:
-                        - cat
-                        tty: true
-                    dnsPolicy: None
-                    dnsConfig:
-                        nameservers:
-                          - 169.254.20.10
-                          - 172.20.0.10
-                        searches:
-                          - selenium.svc.cluster.local
-                          - svc.cluster.local
-                          - cluster.local
-                          - ec2.internal
-                          - us-west-2.compute.internal
-                        options:
-                          - name: ndots
-                            value: "1"
-                          - name: attempts
-                            value: "3"
-                          - name: timeout
-                            value: "1"
-                          - name: rotate
-                  ''' + "${tool}" + '''
-                }
-              }
+                pipeline {
+                  agent any
               stages {
-                stage('Node Version') {
+                  stage('Hello') {
                   steps {
-                    container('npm') {
-                      echo "we are running"
-                      sh "sleep 10; node -v"
+                  sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
+                      } 
                     }
                   }
                 }
-                stage('Checkout') {
-                  steps {
-                    script {
-                      try {
-                        timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                          git branch: '${BRANCH}',
-                          credentialsId: 'github',
-                          url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
-                        }
-                      } catch (err) {
-                        retry(3) {
-                          echo(err)
-                          sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                          timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                            git branch: '${BRANCH}',
-                            credentialsId: 'github',
-                            url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-                stage('Build'){
-                  steps {
-                    script {
-                      container ('qa-automation-npm'){
-                        environment { 
-                          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-                        }
-                        try {
-                          timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                            sh 'npm install --omit=dev ${LOGLEVEL}'
-                          }
-                        } catch (err) {
-                          echo "Build did not complete in 130 seconds, let's retry"
-                          retry(3) {
-                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                            timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                              sh 'npm install --omit=dev ${LOGLEVEL}'
-                            }
-                          }
-                        }
-                        stage(''' + "'${item["jobTitle"]}'" + ''') {
-                          try {
-                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                            timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                            }
-                          } catch (err) {
-                            echo "The test failed, let's retry"
-                            retry(3) {
-                              sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                              timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           ''' 
           )
         }
