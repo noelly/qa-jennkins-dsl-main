@@ -1,0 +1,11 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pipeline to seed or update all pipelines') {
+            steps {
+                jobDsl  targets: ['MTOD Web/Preprod/FoldersCreation.groovy'].join('\n')
+                jobDsl  targets: ['MTOD Web/Preprod/MTOD_Web_Regression_Preprod_Test_Cases.groovy'].join('\n')
+            }
+        }
+    }
+}

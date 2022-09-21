@@ -1,0 +1,10 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pipeline to seed or update all Smoke Tests pipelines') {
+            steps {
+                jobDsl  targets: ['API/API_all_test_cases.groovy'].join('\n')
+            }
+        }
+    }
+}

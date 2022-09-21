@@ -1,0 +1,11 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pipeline to seed or update all HWA Tests pipelines') {
+            steps {
+                jobDsl  targets: ['HWA/test/FoldersCreation.groovy'].join('\n')
+                jobDsl  targets: ['HWA/test/RegressionTests.groovy'].join('\n')
+            }
+        }
+    }
+}
