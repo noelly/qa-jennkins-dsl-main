@@ -1069,7 +1069,7 @@ envFolders.each{ env ->
                 pipeline {
                   agent any
               stages {
-                  stage('Hello') {
+                  stage('Running test') {
                   steps {
                   sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
                       } 
