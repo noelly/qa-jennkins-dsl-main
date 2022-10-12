@@ -1,6 +1,6 @@
 def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
-def mainSTFolder = "${mainFolder}/Front End";
+def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
   'Regression - Staging', 
   'Regression - Preprod Behind Akamai', 
