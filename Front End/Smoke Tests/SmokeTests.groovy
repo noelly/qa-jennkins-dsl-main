@@ -1,4 +1,4 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'carbon-dev'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
 def mainSTFolder = "${mainFolder}/Front End";
 def envFolders = [
@@ -6,6 +6,8 @@ def envFolders = [
     'FE Smoke Tests - Preproduction behind Akamai',
     'FE Smoke Tests - Production',
     'FE Smoke Tests - Pod 1 - Staging',
+    'FE Smoke Tests - Pod 2 - Staging',
+    'FE Smoke Tests - Pod 3 - Staging',
     'FE Smoke Tests - Dev'
 ];
 
@@ -123,14 +125,6 @@ def jobslist = [
     jobTitle: "UIUX - Homepage - Super Street - LG5-5557 - LG5-6190", 
     COMPONENT: "MT/Homepage/UIUX", 
     TESTCASE: "SmokeTestHomePageSuperStreet",
-    URLFILE: "", 
-    AMP: "", 
-    PAGETYPE: "",
-  ],
-  [
-    jobTitle: "UIUX - Homepage - Trending Articles - LG5-4367 - LG5-6190", 
-    COMPONENT: "MT/Homepage/UIUX", 
-    TESTCASE: "SmokeTestHomePage",
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
@@ -555,6 +549,127 @@ def jobslist = [
     AMP: "", 
     PAGETYPE: "",
   ],
+  // mParticle Jobs
+  [
+    jobTitle: "mParticle - Smoke Test - Articles - Features",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/Features/SmokeTestFeaturesUrls.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - Articles - News",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/News/SmokeTestNewsURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - Articles - Reviews",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/Reviews/SmokeTestReviewsURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Index Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestBGIndexPagesURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Make Index Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestBGMakeIndexPage.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Make Model Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestBGMakeModelIndexURL.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Price Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestBGPriceIndexPagesURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Ranking Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestRankingIndexPage.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - BG - Buying Guide Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/BuyersGuide/SmokeTestBuyingGuideIndexPageURL.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - CTT",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/CTT/SmokeTestCTTArticleURL.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - HP",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - YMM - Discontinued Make",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/YMM/SmokeTestDiscontinuedMakeURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - YMM - Discontinued Make Model",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/YMM/SmokeTestDiscontinuedMakeModelURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - YMM - Discontinued Make Model Year",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/YMM/SmokeTestDiscontinuedMakeModelYearURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
+  [
+    jobTitle: "mParticle - Smoke Test - YMM - Year Make Model Page",
+    COMPONENT: "MT/MPArticle",
+    TESTCASE: "SmokeTestMPArticle",
+    URLFILE: "data/MotorTrend/YMM/SmokeTestYMMURLs.json", 
+    AMP: "", 
+    PAGETYPE: "",
+  ],
 ];
 
 envFolders.each{ env ->
@@ -588,16 +703,115 @@ envFolders.each{ env ->
       definition {
         cps {
           script('''
-                pipeline {
-                  agent any
+            pipeline {
+              agent {
+                kubernetes {
+                  inheritFrom 'qa-automation-npm'
+                  label 'npm'
+                  yaml ''' + "${tool}" + '''
+                  spec:
+                    containers:
+                      - name: npm
+                        image: 363308097987.dkr.ecr.us-west-2.amazonaws.com/jenkins-slave:node-05-15-2022
+                        command:
+                        - cat
+                        tty: true
+                    dnsPolicy: None
+                    dnsConfig:
+                        nameservers:
+                          - 169.254.20.10
+                          - 172.20.0.10
+                        searches:
+                          - selenium.svc.cluster.local
+                          - svc.cluster.local
+                          - cluster.local
+                          - ec2.internal
+                          - us-west-2.compute.internal
+                        options:
+                          - name: ndots
+                            value: "1"
+                          - name: attempts
+                            value: "3"
+                          - name: timeout
+                            value: "1"
+                          - name: rotate
+                  ''' + "${tool}" + '''
+                }
+              }
               stages {
-                  stage('Running Test') {
+                stage('Node Version') {
                   steps {
-                  sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                      } 
+                    container('npm') {
+                      echo "we are running"
+                      sh "sleep 10; node -v"
                     }
                   }
                 }
+                stage('Checkout') {
+                  steps {
+                    script {
+                      try {
+                        timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                          git branch: '${BRANCH}',
+                          credentialsId: 'github',
+                          url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
+                        }
+                      } catch (err) {
+                        retry(3) {
+                          echo(err)
+                          sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                          timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                            git branch: '${BRANCH}',
+                            credentialsId: 'github',
+                            url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                stage('Build'){
+                  steps {
+                    script {
+                      container ('qa-automation-npm'){
+                        environment { 
+                          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+                        }
+                        try {
+                          timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                            sh 'npm install --omit=dev ${LOGLEVEL}'
+                          }
+                        } catch (err) {
+                          echo "Build did not complete in 130 seconds, let's retry"
+                          retry(3) {
+                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                            timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                              sh 'npm install --omit=dev ${LOGLEVEL}'
+                            }
+                          }
+                        }
+                        stage(''' + "'${item["jobTitle"]}'" + ''') {
+                          try {
+                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                            timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
+                            }
+                          } catch (err) {
+                            echo "The test failed, let's retry"
+                            retry(3) {
+                              sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                              timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           ''' 
           )
         }
@@ -683,11 +897,6 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - BuyersGuide - Car Match - LG5-5565') {
                     build job: 'UIUX - BuyersGuide - Car Match - LG5-5565', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - Homepage - Trending Articles - LG5-4367 - LG5-6190') {
-                    build job: 'UIUX - Homepage - Trending Articles - LG5-4367 - LG5-6190', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -1020,6 +1229,91 @@ servers.each { server ->
         }
       }
     }
+    pipelineJob("${mainSTFolder}/${envFolders[index]}/1f - Smoke Test Set 6") {
+      parameters {
+        stringParam('SERVER', "${server}", '')
+        stringParam('BRANCH', 'main', '')
+      }
+      definition {
+        cps {
+          script('''
+            properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - Articles - Features') {
+                    build job: 'mParticle - Smoke Test - Articles - Features', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - Articles - News') {
+                    build job: 'mParticle - Smoke Test - Articles - News', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - Articles - Reviews') {
+                    build job: 'mParticle - Smoke Test - Articles - Reviews', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - BG - Buying Guide Page') {
+                    build job: 'mParticle - Smoke Test - BG - Buying Guide Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - BG - Index Page') {
+                    build job: 'mParticle - Smoke Test - BG - Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - BG - Make Model Page') {
+                    build job: 'mParticle - Smoke Test - BG - Make Model Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - BG - Price Page') {
+                    build job: 'mParticle - Smoke Test - BG - Price Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - BG - Ranking Page') {
+                    build job: 'mParticle - Smoke Test - BG - Ranking Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - CTT') {
+                    build job: 'mParticle - Smoke Test - CTT', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - HP') {
+                    build job: 'mParticle - Smoke Test - HP', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - YMM - Discontinued Make') {
+                    build job: 'mParticle - Smoke Test - YMM - Discontinued Make', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - YMM - Discontinued Make Model') {
+                    build job: 'mParticle - Smoke Test - YMM - Discontinued Make Model', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - YMM - Discontinued Make Model Year') {
+                    build job: 'mParticle - Smoke Test - YMM - Discontinued Make Model Year', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Smoke Test - YMM - Year Make Model Page') {
+                    build job: 'mParticle - Smoke Test - YMM - Year Make Model Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+          ''' 
+          )
+        }
+      }
+    }
     index += 1;
 }
 
@@ -1058,7 +1352,7 @@ envFolders.each{ env ->
         }
         publishers {
             downstreamParameterized {
-                trigger("1a - Smoke Test Set 1,1b - Smoke Test Set 2,1c - Smoke Test Set 3,1d - Smoke Test Set 4,1e - Smoke Test Set 5") {
+                trigger("1a - Smoke Test Set 1,1b - Smoke Test Set 2,1c - Smoke Test Set 3,1d - Smoke Test Set 4,1e - Smoke Test Set 5,1f - Smoke Test Set 6") {
                     condition('SUCCESS')
                     parameters {
                         currentBuild()

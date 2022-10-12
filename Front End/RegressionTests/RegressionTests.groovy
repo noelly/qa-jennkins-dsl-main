@@ -1,4 +1,4 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'carbon-dev'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
 def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
@@ -6,6 +6,8 @@ def envFolders = [
   'Regression - Preprod Behind Akamai', 
   'Regression - Production',
   'Regression - Pod1 - Staging',
+  'Regression - Pod2 - Staging',
+  'Regression - Pod3 - Staging',
   'Regression - Dev', 
 ];
 
@@ -992,7 +994,7 @@ def jobslist = [
   [
     jobTitle: "UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
-    TESTCASE: "UIUXCTCarmatch", 
+    TESTCASE: "UIUXCTCarMatch", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "", 
@@ -1000,7 +1002,7 @@ def jobslist = [
   [
     jobTitle: "UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
-    TESTCASE: "UIUXCTBGMakeBodyStyle", 
+    TESTCASE: "UIUXCTMakeBodyStyle", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "", 
@@ -1024,7 +1026,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "UIUX - BG - Car Compare -  Make Model Year - CSIN-271 - CSIN-482",
+    jobTitle: "UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTMakeModelYear", 
     URLFILE: "", 
@@ -1033,6 +1035,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
+    jobTitle: "UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-478",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTPricePage", 
     URLFILE: "", 
@@ -1066,10 +1069,65 @@ def jobslist = [
     AMP: "", 
     PAGETYPE: "", 
   ],
-    [
+  [
     jobTitle: "UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTStickyModalUI", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  // mParticle Jobs
+  [
+    jobTitle: "mParticle - HP - Screen View",
+    COMPONENT: "MT/MPArticle/HomePage", 
+    TESTCASE: "MPArticleHomePage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - HP - Newsletter Registration Event",
+    COMPONENT: "MT/MPArticle/HomePage", 
+    TESTCASE: "MPArticleNewsletter", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Articles - Features",
+    COMPONENT: "MT/MPArticle/Articles", 
+    TESTCASE: "MPArticleFeatureArticles", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Articles - News",
+    COMPONENT: "MT/MPArticle/Articles", 
+    TESTCASE: "MPArticleNewsArticles", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Articles - Reviews",
+    COMPONENT: "MT/MPArticle/Articles", 
+    TESTCASE: "MPArticleReviewsArticles", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Index Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "MPArticleBGIndex", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
@@ -1455,6 +1513,26 @@ servers.each { server ->
                     build job: 'Analytics - Reviews - Comparison AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Articles - Features') {
+                    build job: 'mParticle - Articles - Features', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Articles - News') {
+                    build job: 'mParticle - Articles - News', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Articles - Reviews') {
+                    build job: 'mParticle - Articles - Reviews', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Index Page') {
+                    build job: 'mParticle - BG - Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1673,6 +1751,16 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - Articles - Title - LG5-190') {
                     build job: 'UIUX - Articles - Title - LG5-190', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - HP - Newsletter Registration Event') {
+                    build job: 'mParticle - HP - Newsletter Registration Event', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - HP - Screen View') {
+                    build job: 'mParticle - HP - Screen View', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
