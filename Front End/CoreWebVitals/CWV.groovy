@@ -77,16 +77,133 @@ envFolders.each{ env ->
                     definition {
                         cps {
                             script('''
-                pipeline {
-                  agent any
-              stages {
-                  stage('Hello') {
-                  steps {
-                  sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                      } 
-                    }
-                  }
+pipeline {
+  agent {
+    kubernetes {
+      inheritFrom 'qa-automation-npm'
+      label 'npm'
+      yaml ''' + "${tool}" + '''
+      spec:
+        containers:
+          - name: npm
+            image: 363308097987.dkr.ecr.us-west-2.amazonaws.com/jenkins-slave:node-05-15-2022
+            command:
+            - cat
+            tty: true
+        dnsPolicy: None
+        dnsConfig:
+            nameservers:
+              - 169.254.20.10
+              - 172.20.0.10
+            searches:
+              - selenium.svc.cluster.local
+              - svc.cluster.local
+              - cluster.local
+              - ec2.internal
+              - us-west-2.compute.internal
+            options:
+              - name: ndots
+                value: "1"
+              - name: attempts
+                value: "3"
+              - name: timeout
+                value: "1"
+              - name: rotate'''
+             + "${tool}" + '''
+    }
+  }
+  parameters {
+      string(name: 'CHECKOUT_TIMEOUT', defaultValue: '60', description: 'Wait up to 60 seconds for checkout')
+    
+      string(name: 'BRANCH', defaultValue: 'main', description: '')
+    
+      string(name: 'SLEEP', defaultValue: '3', description: '')
+
+      string(name: 'BUILD_TIMEOUT', defaultValue: '130', description: '')
+      
+      string(name: 'TEST_TIMEOUT', defaultValue: '360', description: '')
+
+      choice(name: 'LOGLEVEL', choices: ['', '--loglevel warn', '--loglevel verbose'], description: '')
+
+      string(name: 'COMPONENT', defaultValue: 'MT/Performance/', description: '')
+
+      string(name: 'TESTCASE', defaultValue: 'PerformanceTest', description: '')
+
+      string(name: 'SERVER', defaultValue: ''' + "'${servers[index]}'" + ''', description: '')
+
+      string(name: 'METRIC', defaultValue: ''' + "'${metric}'" + ''' , description: '')
+
+      string(name: 'PAGESLUG', defaultValue: ''' + "'${pageSlugs[pageSlugIndex]}'" + ''', description: '')
+
+      string(name: 'PLATFORM', defaultValue: ''' + "'${platform}'" + ''', description: '')
+
+    }
+    
+  stages {
+    stage('What Node') {
+      steps {
+          container('npm') {
+            echo "we are running"
+            sh "sleep 10; node -v"
+          }
+      }
+    }
+    stage('Checkout') {
+        steps {
+            script {
+            try {
+                timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                    git branch: '${BRANCH}',
+                        credentialsId: 'github',
+                        url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
                 }
+            } catch (err) {
+                    retry(3) {
+                        echo(err)
+                        sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                        timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                        git branch: '${BRANCH}',
+                            credentialsId: 'github',
+                            url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
+                        }
+                    }
+                }
+            }
+        }
+    }
+    stage('Build'){
+        steps {
+            script {
+                container ('qa-automation-npm'){
+                     environment { 
+                        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+                    }
+                    try {
+                        timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                            sh 'npm install --omit=dev ${LOGLEVEL}'
+                        }
+                    } catch (err) {
+                        echo "Build did not complete in 130 seconds, let's retry"
+                        retry(3) {
+                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                            timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                                sh 'npm install --omit=dev ${LOGLEVEL}'
+                            }
+                        }
+                    }
+                    
+                    stage('Core Web Vital test') {
+                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
+                            timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
+                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} METRIC=${METRIC} PAGESLUG=${PAGESLUG} PLATFORM=${PLATFORM} npm run devtools-kubernetes-api'
+                            }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
                               '''
                             )
                         }
