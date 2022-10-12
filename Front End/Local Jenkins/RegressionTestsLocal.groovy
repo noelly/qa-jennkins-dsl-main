@@ -1,6 +1,6 @@
 def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
-def mainSTFolder = "${mainFolder}/Front End";
+def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
   'Regression - Staging', 
   'Regression - Preprod Behind Akamai', 
@@ -9,15 +9,6 @@ def envFolders = [
   'Regression - Pod2 - Staging',
   'Regression - Pod3 - Staging',
   'Regression - Dev', 
-];
-def CWVFolders = [
-  'Core Web Vitals - Staging', 
-  'Core Web Vitals - Preprod Behind Akamai', 
-  'Core Web Vitals - Production',
-  'Core Web Vitals - Staging',
-  'Core Web Vitals - Staging',
-  'Core Web Vitals - Staging',
-  'Core Web Vitals - Staging', 
 ];
 
 // Main Folders
@@ -993,7 +984,7 @@ def jobslist = [
   ],
   // CSIN Car Compare tests
   [
-    jobTitle: "UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288",
+    jobTitle: "UIUX - BG - Car Compare - Buyer's Guide Index - CSIN-271 - CSIN-279 - CSIN-288",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTBGIndex", 
     URLFILE: "", 
@@ -1177,111 +1168,12 @@ envFolders.each{ env ->
         cps {
           script('''
             pipeline {
-              agent {
-                kubernetes {
-                  inheritFrom 'qa-automation-npm'
-                  label 'npm'
-                  yaml ''' + "${tool}" + '''
-                  spec:
-                    containers:
-                      - name: npm
-                        image: 363308097987.dkr.ecr.us-west-2.amazonaws.com/jenkins-slave:node-05-15-2022
-                        command:
-                        - cat
-                        tty: true
-                    dnsPolicy: None
-                    dnsConfig:
-                        nameservers:
-                          - 169.254.20.10
-                          - 172.20.0.10
-                        searches:
-                          - selenium.svc.cluster.local
-                          - svc.cluster.local
-                          - cluster.local
-                          - ec2.internal
-                          - us-west-2.compute.internal
-                        options:
-                          - name: ndots
-                            value: "1"
-                          - name: attempts
-                            value: "3"
-                          - name: timeout
-                            value: "1"
-                          - name: rotate
-                  ''' + "${tool}" + '''
-                }
-              }
+              agent any
               stages {
-                stage('Node Version') {
+                stage('Running test') {
                   steps {
-                    container('npm') {
-                      echo "we are running"
-                      sh "sleep 10; node -v"
-                    }
-                  }
-                }
-                stage('Checkout') {
-                  steps {
-                    script {
-                      try {
-                        timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                          git branch: '${BRANCH}',
-                          credentialsId: 'github',
-                          url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
-                        }
-                      } catch (err) {
-                        retry(3) {
-                          echo(err)
-                          sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                          timeout(time: "${CHECKOUT_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                            git branch: '${BRANCH}',
-                            credentialsId: 'github',
-                            url: 'git@github.com:motortrend/motortrend-lithium-web-automation.git'
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-                stage('Build'){
-                  steps {
-                    script {
-                      container ('qa-automation-npm'){
-                        environment { 
-                          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-                        }
-                        try {
-                          timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                            sh 'npm install --omit=dev ${LOGLEVEL}'
-                          }
-                        } catch (err) {
-                          echo "Build did not complete in 130 seconds, let's retry"
-                          retry(3) {
-                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                            timeout(time: "${BUILD_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                              sh 'npm install --omit=dev ${LOGLEVEL}'
-                            }
-                          }
-                        }
-                        stage(''' + "'${item["jobTitle"]}'" + ''') {
-                          try {
-                            sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                            timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MOBILE=${MOBILE} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                            }
-                          } catch (err) {
-                            echo "The test failed, let's retry"
-                            retry(3) {
-                              sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
-                              timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MOBILE=${MOBILE} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
+                    sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} PAGESLUG=${PAGESLUG} URLFILE=${URLFILE} PAGETYPE=${PAGETYPE} AMP=${AMP} MAKE=${MAKE} MODEL=${MODEL} YEAR=${YEAR} BODYSTYLE=${BODYSTYLE} npm run devtools-kubernetes'
+                  } 
                 }
               }
             }
@@ -2000,11 +1892,6 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - YMM - Ratings And Features - LG5-5498') {
                     build job: 'UIUX - YMM - Ratings And Features - LG5-5498', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('FE - '''+"${CWVFolders[index]}"+''' 0 Job') {
-                    build job: '/QA-Selenium/ONO/Core Web Vitals/'''+"${CWVFolders[index]}"+'''/0 - Run all CWV tests', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
