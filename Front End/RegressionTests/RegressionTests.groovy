@@ -1,4 +1,4 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'pod1-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
 def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
@@ -1087,6 +1087,15 @@ def jobslist = [
     PAGETYPE: "",
     MOBILE: "",  
   ],
+  [
+    jobTitle: 'UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460',
+    COMPONENT: 'MT/BuyersGuide/UIUX/',
+    TESTCASE: 'UIUXCTResultsPage',
+    URLFILE: '',
+    AMP: '',
+    PAGETYPE: '',
+    MOBILE: '',
+  ],
   // mParticle Jobs
   [
     jobTitle: "mParticle - HP - Screen View",
@@ -1407,6 +1416,21 @@ servers.each { server ->
                     build job: 'Analytics - Features - Car Profiles AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288') {
+                    build job: 'UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258') {
+                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483') {
+                    build job: 'UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1542,6 +1566,21 @@ servers.each { server ->
                     build job: 'mParticle - BG - Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480') {
+                    build job: 'UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481') {
+                    build job: 'UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482') {
+                    build job: 'UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1662,6 +1701,21 @@ servers.each { server ->
                     build job: 'Analytics - YMM - Make Model Year List - LG5-4605 - LG5-5298', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479') {
+                    build job: 'UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Ranking Page - CSIN-271 - CSIN-478') {
+                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460') {
+                    build job: 'UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1770,6 +1824,21 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('mParticle - HP - Screen View') {
                     build job: 'mParticle - HP - Screen View', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Sticky Modal Error Handling- CSIN-292') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal Error Handling- CSIN-292', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Sticky Modal Persistence - CSIN-540') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal Persistence - CSIN-540', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 

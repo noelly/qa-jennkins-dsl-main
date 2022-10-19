@@ -1,4 +1,4 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'csin-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'pod1-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
 def mainFolder = "QA-Selenium/ONO";
 def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
