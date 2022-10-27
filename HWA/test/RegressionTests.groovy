@@ -1,5 +1,25 @@
 def jobNames = [
   [
+    JOBTITLE: 'Account - accountInformation - XT-1952',
+    COMPONENT: 'account',
+    TESTCASE: 'accountInformation'
+  ],
+  [
+    JOBTITLE: 'Account - appVersion - XT-1917',
+    COMPONENT: 'account',
+    TESTCASE: 'appVersion'
+  ],
+  [
+    JOBTITLE: 'Account - help - XT-1950',
+    COMPONENT: 'account',
+    TESTCASE: 'help'
+  ], 
+  [
+    JOBTITLE: 'Account - legal - XT-1951',
+    COMPONENT: 'account',
+    TESTCASE: 'legal'
+  ],
+  [
     JOBTITLE: 'Account - menu - XT-1956',
     COMPONENT: 'account',
     TESTCASE: 'menu'
@@ -10,14 +30,84 @@ def jobNames = [
     TESTCASE: 'noLogo'
   ],
   [
-    JOBTITLE: 'Account - signOut - XT-1862',
+    JOBTITLE: 'Account - purchasePlan - XT-1957',
+    COMPONENT: 'account',
+    TESTCASE: 'purchasePlan'
+  ],
+  [
+    JOBTITLE: 'Account - signOut - XT-1953',
     COMPONENT: 'account',
     TESTCASE: 'signOut'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - accountPageTrackingCall - XT-1895',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'accountPageTrackingCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - deviceActivationActionCalls - XT-1912',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'deviceActivationActionCalls'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - deviceActivationPageCall - XT-1910',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'deviceActivationPageCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - homePageCall - XT-1888',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'homePageCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - myStuffPageTrackingCall - XT-1891',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'myStuffPageTrackingCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - showDetailsTrackingCall - XT-1890',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'showDetailsTrackingCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - signInClickEvent - XT-1899',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'signInClickEvent'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - signInOptionsPageCall - XT-1911',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'signInOptionsPageCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - signInPageLoadCall - XT-1900',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'signInPageLoadCall'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - splashPageLoad - XT-1898',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'splashPageLoad'
+  ],
+  [
+    JOBTITLE: 'Analytics Adobe - subsStatusActiveUser - XT-1887',
+    COMPONENT: 'analyticsAdobe',
+    TESTCASE: 'subsStatusActiveUser'
   ],
   [
     JOBTITLE: 'App Launch - appLaunch - XT-1818',
     COMPONENT: 'appLaunch',
     TESTCASE: 'appLaunch'
+  ],
+  [
+    JOBTITLE: 'App Launch - loggedOut - XT-1816',
+    COMPONENT: 'appLaunch',
+    TESTCASE: 'loggedOut'
+  ],
+  [
+    JOBTITLE: 'App Launch - preloadScreen - XT-1815',
+    COMPONENT: 'appLaunch',
+    TESTCASE: 'preloadScreen'
   ],
   [
     JOBTITLE: 'Discover - defaultScreen - XT-1983',
@@ -113,6 +203,21 @@ def jobNames = [
     JOBTITLE: 'MainMenu - selectingHome - XT-1872',
     COMPONENT: 'mainMenu',
     TESTCASE: 'selectingHome'
+  ],
+  [
+    JOBTITLE: 'MyStuff - emptyState - XT-1848',
+    COMPONENT: 'myStuff',
+    TESTCASE: 'emptyState'
+  ],
+  [
+    JOBTITLE: 'MyStuff - episodesItemsPhase1 - XT-1974',
+    COMPONENT: 'myStuff',
+    TESTCASE: 'episodesItemsPhase1'
+  ],
+  [
+    JOBTITLE: 'MyStuff - topFiltersPhase1 - XT-1976',
+    COMPONENT: 'myStuff',
+    TESTCASE: 'topFiltersPhase1'
   ],
   [
     JOBTITLE: 'Search - generalAppearance - XT-2018',
@@ -394,6 +499,8 @@ if (setJobsStagesStrings.size < currentJobSet + 1) {
       password(name: 'PASSWORD', description: 'Email pass')
       password(name: 'BREACHED_PASSWORD', description: 'BREACHED Pass')
       password(name: 'ORG_PASSWORD', description: 'Org pass')
+      password(name: 'BASIC_AUTH_USERNAME', description: 'BASIC AUTH Username')
+      password(name: 'BASIC_AUTH_PASSWORD', description: 'BASIC AUTH Password')
     }
             stages {
               stage('What Node') {
@@ -453,8 +560,8 @@ if (setJobsStagesStrings.size < currentJobSet + 1) {
                                   try {
                                       sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
                                       timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                          withCredentials([string(credentialsId: 'MTODPW', variable: 'PASSWORD'), string(credentialsId: 'OrgPw', variable: 'ORG_PASSWORD'), string(credentialsId: 'BreachedPW', variable: 'BREACHED_PASSWORD')]) {
-                                          sh 'ENV=${ENV} DEVICE_TYPE=${DEVICE_TYPE} SONIC_BASE=${SONIC_BASE} COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} PASSWORD=${PASSWORD} BREACHED_PASSWORD=${BREACHED_PASSWORD} ORG_PASSWORD=${ORG_PASSWORD} npm run hwa-kubernetes ${LOGLEVEL}'
+                                          withCredentials([string(credentialsId: 'MTODPW', variable: 'PASSWORD'), string(credentialsId: 'OrgPw', variable: 'ORG_PASSWORD'), string(credentialsId: 'BreachedPW', variable: 'BREACHED_PASSWORD'), string(credentialsId: 'BASIC_AUTH_USERNAME', variable: 'BASIC_AUTH_USERNAME'),string(credentialsId: 'BASIC_AUTH_PASSWORD', variable: 'BASIC_AUTH_PASSWORD')]) {
+                                          sh 'ENV=${ENV} DEVICE_TYPE=${DEVICE_TYPE} SONIC_BASE=${SONIC_BASE} COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} PASSWORD=${PASSWORD} BREACHED_PASSWORD=${BREACHED_PASSWORD} ORG_PASSWORD=${ORG_PASSWORD} BASIC_AUTH_USERNAME=${BASIC_AUTH_USERNAME} BASIC_AUTH_PASSWORD=${BASIC_AUTH_PASSWORD} npm run hwa-kubernetes ${LOGLEVEL}'
                                           }
                                       }
                                   } catch (err) {
@@ -467,6 +574,11 @@ if (setJobsStagesStrings.size < currentJobSet + 1) {
                   }
               }
             }
+            // post {
+            //     always {
+            //         archiveArtifacts artifacts: 'screenshots/*.png'
+            //     }
+            // }
           }
           '''
           )
@@ -495,7 +607,7 @@ def triggerString = ""
 
   job("${path}/0 - Run all set jobs") {
     triggers {
-              cron '''H 2 * * 0-5'''
+              cron '''H 6 * * 0-5'''
             }
     parameters {
       stringParam("ENV", 'xtv.preprod', "Environment being used for testing")

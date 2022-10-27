@@ -48,14 +48,6 @@ def jobsList = [
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'chooseYourPlan'],
 [
-  jobTitle: 'Analytics Adobe - freetrialLandingPage - MWBU-13587',
-  COMPONENT: 'analyticsAdobe',
-  TESTCASE: 'freetrialLandingPage'],
-[
-  jobTitle: 'Analytics Adobe - frontPorch - MWBU-14903',
-  COMPONENT: 'analyticsAdobe',
-  TESTCASE: 'frontPorch'],
-[
   jobTitle: 'Analytics Adobe - helpButton - MWBU-14517',
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'helpButton'],
@@ -63,10 +55,6 @@ def jobsList = [
   jobTitle: 'Analytics Adobe - paymentTypeScreen - MWBU-13606',
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'paymentTypeScreen'],
-[
-  jobTitle: 'Analytics Adobe - startSubsFreeTrialNoPlan - MWBU-13568',
-  COMPONENT: 'analyticsAdobe',
-  TESTCASE: 'startSubsFreeTrialNoPlan'],
 [
   jobTitle: 'Analytics Adobe - subsVarsAvodUsers - MWBU-13615',
   COMPONENT: 'analyticsAdobe',
@@ -115,6 +103,14 @@ def jobsList = [
   jobTitle: 'Continue Watching - videoAddedAfterPlayed - MWBU-14423',
   COMPONENT: 'continueWatching',
   TESTCASE: 'videoAddedAfterPlayed'],
+[
+  jobTitle: 'Digital Magazines - publicationPageSubsUserExperience - MWBU-16916',
+  COMPONENT: 'digitalMagazines',
+  TESTCASE: 'publicationPageSubsUserExperience'],
+[
+  jobTitle: 'Digital Magazines - publicationPageUserExperience - MWBU-16933',
+  COMPONENT: 'digitalMagazines',
+  TESTCASE: 'publicationPageUserExperience'],
 [
   jobTitle: 'Episode Detail Page - episodeCardUI - MWBU-12857',
   COMPONENT: 'episodeDetailPage',
@@ -236,6 +232,26 @@ def jobsList = [
   COMPONENT: 'mParticle',
   TESTCASE: 'contentImpressionOnHeroSlider'],
 [
+  jobTitle: 'Mparticle - dMMagazineIssueEvent - MWBU-16925',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'dMMagazineIssueEvent'],
+[
+  jobTitle: 'Mparticle - dMpageViewBrandSingleYear - MWBU-16927',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'dMpageViewBrandSingleYear'],
+[
+  jobTitle: 'Mparticle - dMpageViewBrandYear - MWBU-16926',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'dMpageViewBrandYear'],
+[
+  jobTitle: 'Mparticle - marketingTrackingEventsForCampaigns - MWBU-16961',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'marketingTrackingEventsForCampaigns'],
+[
+  jobTitle: 'Mparticle - pageViewDigitalMagazine - MWBU-16924',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'pageViewDigitalMagazine'],
+[
   jobTitle: 'Mparticle - pageViewOnAccessMyData - MWBU-16711',
   COMPONENT: 'mParticle',
   TESTCASE: 'pageViewOnAccessMyData'],
@@ -308,6 +324,10 @@ def jobsList = [
   COMPONENT: 'mParticle',
   TESTCASE: 'pageViewOnRegistrationP2'],
 [
+  jobTitle: 'Mparticle - pageViewOnRegistrationP3 - MWBU-16457',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'pageViewOnRegistrationP3'],
+[
   jobTitle: 'Mparticle - pageViewOnSearchPage - MWBU-16699',
   COMPONENT: 'mParticle',
   TESTCASE: 'pageViewOnSearchPage'],
@@ -335,6 +355,10 @@ def jobsList = [
   jobTitle: 'Mparticle - pageViewOnUpdateProfile - MWBU-16703',
   COMPONENT: 'mParticle',
   TESTCASE: 'pageViewOnUpdateProfile'],
+[
+  jobTitle: 'Mparticle - registeredUserInfoLogin - MWBU-16645',
+  COMPONENT: 'mParticle',
+  TESTCASE: 'registeredUserInfoLogin'],
 [
   jobTitle: 'Mparticle - sdkAndLiveFeed - MWBU-16246',
   COMPONENT: 'mParticle',
@@ -637,6 +661,14 @@ def removedJobsList = [
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'extrasTab'],
 [
+  jobTitle: 'Analytics Adobe - freetrialLandingPage - MWBU-13587',
+  COMPONENT: 'analyticsAdobe',
+  TESTCASE: 'freetrialLandingPage'],
+[
+  jobTitle: 'Analytics Adobe - frontPorch - MWBU-14903',
+  COMPONENT: 'analyticsAdobe',
+  TESTCASE: 'frontPorch'],
+[
   jobTitle: 'Analytics Adobe - paymentScreen - MWBU-13612',
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'paymentScreen'],
@@ -653,6 +685,10 @@ def removedJobsList = [
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'subsVarsAnonUsers'],
 [
+  jobTitle: 'Analytics Adobe - startSubsFreeTrialNoPlan - MWBU-13568',
+  COMPONENT: 'analyticsAdobe',
+  TESTCASE: 'startSubsFreeTrialNoPlan'],
+[
   jobTitle: 'Analytics Adobe - terminatedAccount - MWBU-14063',
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'terminatedAccount'],
@@ -660,10 +696,6 @@ def removedJobsList = [
   jobTitle: 'Analytics Adobe - userNavigatesAcrossMtod - MWBU-13813',
   COMPONENT: 'analyticsAdobe',
   TESTCASE: 'userNavigatesAcrossMtod'],
-[
-  jobTitle: 'Mparticle - pageViewOnRegistrationP3 - MWBU-16457',
-  COMPONENT: 'mParticle',
-  TESTCASE: 'pageViewOnRegistrationP3'],
 [
   jobTitle: 'Run Locally - Analytics Adobe - campaignTag - MWBU-13506',
   COMPONENT: 'analyticsAdobe',
@@ -733,6 +765,8 @@ pipeline {
     password(name: 'PASSWORD', description: 'Email pass')
     password(name: 'BREACHED_PASSWORD', description: 'BREACHED Pass')
     password(name: 'ORG_PASSWORD', description: 'Org pass')
+    password(name: 'BASIC_AUTH_USERNAME', description: 'BASIC AUTH Username')
+    password(name: 'BASIC_AUTH_PASSWORD', description: 'BASIC AUTH Password')
   }
   stages {
     stage('What Node') {
@@ -792,8 +826,8 @@ pipeline {
                         try {
                             sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
                             timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                withCredentials([string(credentialsId: 'MTODPW', variable: 'PASSWORD'), string(credentialsId: 'OrgPw', variable: 'ORG_PASSWORD'), string(credentialsId: 'BreachedPW', variable: 'BREACHED_PASSWORD')]) {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} ENV=${ENV} PASSWORD=${PASSWORD} BREACHED_PASSWORD=${BREACHED_PASSWORD} ORG_PASSWORD=${ORG_PASSWORD} npm run devtools-kubernetes'
+                                withCredentials([string(credentialsId: 'MTODPW', variable: 'PASSWORD'), string(credentialsId: 'OrgPw', variable: 'ORG_PASSWORD'), string(credentialsId: 'BreachedPW', variable: 'BREACHED_PASSWORD'), string(credentialsId: 'BASIC_AUTH_USERNAME', variable: 'BASIC_AUTH_USERNAME'), string(credentialsId: 'BASIC_AUTH_PASSWORD', variable: 'BASIC_AUTH_PASSWORD')]) {
+                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} ENV=${ENV} PASSWORD=${PASSWORD} BREACHED_PASSWORD=${BREACHED_PASSWORD} ORG_PASSWORD=${ORG_PASSWORD} BASIC_AUTH_USERNAME=${BASIC_AUTH_USERNAME} BASIC_AUTH_PASSWORD=${BASIC_AUTH_PASSWORD} npm run devtools-kubernetes'
                                 }
                             }
                         } catch (err) {

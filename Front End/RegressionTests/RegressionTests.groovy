@@ -123,6 +123,14 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
+    jobTitle: "Analytics - BG - CT Results Page - CSIN-530", 
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
+    TESTCASE: "BGCarCompareResultsPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "", 
+  ],
+  [
     jobTitle: "Analytics - BG - Index Page - LG5-4605 - LG5-2823", 
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGIndexPage", 
@@ -1151,7 +1159,70 @@ def jobslist = [
     PAGETYPE: "",
     MOBILE: "",  
   ],
-]
+  [
+    jobTitle: "mParticle - BG - Buying Guide Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleBuyingGuide", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Make Body Style Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleMakeBodyStyle", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Make Index Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleMakeIndex", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Make Model Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleMakeModel", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Make Model Year Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleMakeModelYear", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - BG - Ranking Page",
+    COMPONENT: "MT/MPArticle/BG", 
+    TESTCASE: "mParticleRanking", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - The Future - The Inevitable",
+    COMPONENT: "MT/MPArticle/TheFuture", 
+    TESTCASE: "MPArticleTheInevitable", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+];
 
 envFolders.each{ env ->
   // Front End Regression Tests Folders
@@ -1369,6 +1440,11 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - BG - Buying Guides - LG5-4605 - LG5-3179') {
                     build job: 'Analytics - BG - Buying Guides - LG5-4605 - LG5-3179', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('Analytics - BG - CT Results Page - CSIN-530') {
+                    build job: 'Analytics - BG - CT Results Page - CSIN-530', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1839,6 +1915,41 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438') {
                     build job: 'UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Buying Guide Page') {
+                    build job: 'mParticle - BG - Buying Guide Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Make Body Style Page') {
+                    build job: 'mParticle - BG - Make Body Style Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Make Index Page') {
+                    build job: 'mParticle - BG - Make Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Make Model Page') {
+                    build job: 'mParticle - BG - Make Model Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Make Model Year Page') {
+                    build job: 'mParticle - BG - Make Model Year Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - BG - Ranking Page') {
+                    build job: 'mParticle - BG - Ranking Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - The Future - The Inevitable') {
+                    build job: 'mParticle - The Future - The Inevitable', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
