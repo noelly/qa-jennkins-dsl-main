@@ -680,7 +680,15 @@ def jobslist = [
   [
     jobTitle: "UIUX - YMM - Ratings And Features - LG5-5498", 
     COMPONENT: "MT/BuyersGuide/UIUX", 
-    TESTCASE: "UIUXTopRankingVehicleByMake", 
+    TESTCASE: "UIUXYMMRatingsAndFeatures", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "", 
+  ],
+  [
+    jobTitle: "UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958", 
+    COMPONENT: "MT/Homepage/UIUX", 
+    TESTCASE: "UIUXhomepageHamburgerMenu", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "", 
@@ -1097,62 +1105,62 @@ def jobslist = [
   ],
   // mParticle Jobs
   [
-    jobTitle: "mParticle - HP - Screen View",
-    COMPONENT: "MT/MPArticle/HomePage", 
-    TESTCASE: "MPArticleHomePage", 
+    jobTitle: "mParticle - HP - Page View - LG5-6542",
+    COMPONENT: "MT/Homepage/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleHomePage", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - HP - Newsletter Registration Event",
-    COMPONENT: "MT/MPArticle/HomePage", 
-    TESTCASE: "MPArticleNewsletter", 
+    jobTitle: "mParticle - Newsletter - Registration - Complete - PageView - LG5-6587",
+    COMPONENT: "MT/Homepage/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleNewsletter", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Articles - Features",
-    COMPONENT: "MT/MPArticle/Articles", 
-    TESTCASE: "MPArticleFeatureArticles", 
+    jobTitle: "mParticle - Articles - Features - PageView - LG5-6580",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleFeatureArticles", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Articles - News",
-    COMPONENT: "MT/MPArticle/Articles", 
-    TESTCASE: "MPArticleNewsArticles", 
+    jobTitle: "mParticle - Articles - News - PageView - LG5-6578",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleNewsArticles", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Articles - Reviews",
-    COMPONENT: "MT/MPArticle/Articles", 
-    TESTCASE: "MPArticleReviewsArticles", 
+    jobTitle: "mParticle - Articles - Reviews - PageView - LG5-6579",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleReviewsArticles", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Index Page",
-    COMPONENT: "MT/MPArticle/BG", 
-    TESTCASE: "MPArticleBGIndex", 
+    jobTitle: "mParticle - Buyers Guide - PageView - LG5-6543",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleBGIndex", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Buying Guide Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleBuyingGuide", 
     URLFILE: "", 
     AMP: "", 
@@ -1160,8 +1168,8 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Make Body Style Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Style Brand - PageView - LG5-6549",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeBodyStyle", 
     URLFILE: "", 
     AMP: "", 
@@ -1169,8 +1177,8 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Make Index Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Make - PageView - LG5-6544",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeIndex", 
     URLFILE: "", 
     AMP: "", 
@@ -1178,8 +1186,8 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Make Model Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Make Model - PageView - LG5-6545",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeModel", 
     URLFILE: "", 
     AMP: "", 
@@ -1187,8 +1195,8 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Make Model Year Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeModelYear", 
     URLFILE: "", 
     AMP: "", 
@@ -1196,8 +1204,8 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - BG - Ranking Page",
-    COMPONENT: "MT/MPArticle/BG", 
+    jobTitle: "mParticle - Buyers Guide - Style - PageView - LG5-6547",
+    COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleRanking", 
     URLFILE: "", 
     AMP: "", 
@@ -1206,8 +1214,71 @@ def jobslist = [
   ],
   [
     jobTitle: "mParticle - The Future - The Inevitable",
-    COMPONENT: "MT/MPArticle/TheFuture", 
-    TESTCASE: "MPArticleTheInevitable", 
+    COMPONENT: "MT/TheFuture/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleTheInevitable", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - 404 Error Page - LG5-6585",
+    COMPONENT: "MT/Other/ANALYTICS/mParticle", 
+    TESTCASE: "mParticle404ErrorPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - 500 Error Page - LG5-6585",
+    COMPONENT: "MT/Other/ANALYTICS/mParticle", 
+    TESTCASE: "mParticle500ErrorPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Auto News Page",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleNewsIndexPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Car Reviews Page",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleReviewsIndexPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Feature Page",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleFeaturesIndexPage", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Image Gallery - PageView - LG5-6586",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleArticleImageGallery", 
+    URLFILE: "", 
+    AMP: "", 
+    PAGETYPE: "",
+    MOBILE: "",  
+  ],
+  [
+    jobTitle: "mParticle - Topic Index Pages - PageView - LG5-6583",
+    COMPONENT: "MT/Article/ANALYTICS/mParticle", 
+    TESTCASE: "mParticleTopicPage", 
     URLFILE: "", 
     AMP: "", 
     PAGETYPE: "",
@@ -1384,6 +1455,21 @@ servers.each { server ->
                     build job: 'Analytics - Features - Car Profiles AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288') {
+                    build job: 'UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258') {
+                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483') {
+                    build job: 'UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1500,23 +1586,43 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - Features') {
-                    build job: 'mParticle - Articles - Features', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Articles - Features - PageView - LG5-6580') {
+                    build job: 'mParticle - Articles - Features - PageView - LG5-6580', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - News') {
-                    build job: 'mParticle - Articles - News', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Articles - News - PageView - LG5-6578') {
+                    build job: 'mParticle - Articles - News - PageView - LG5-6578', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - Reviews') {
-                    build job: 'mParticle - Articles - Reviews', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Articles - Reviews - PageView - LG5-6579') {
+                    build job: 'mParticle - Articles - Reviews - PageView - LG5-6579', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Index Page') {
-                    build job: 'mParticle - BG - Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Buyers Guide - PageView - LG5-6543') {
+                    build job: 'mParticle - Buyers Guide - PageView - LG5-6543', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480') {
+                    build job: 'UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481') {
+                    build job: 'UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482') {
+                    build job: 'UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958') {
+                    build job: 'UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -1639,6 +1745,21 @@ servers.each { server ->
                     build job: 'Analytics - YMM - Make Model Year List - LG5-4605 - LG5-5298', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479') {
+                    build job: 'UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Ranking Page - CSIN-271 - CSIN-478') {
+                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460') {
+                    build job: 'UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
           ''' 
           )
         }
@@ -1740,48 +1861,88 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - HP - Newsletter Registration Event') {
-                    build job: 'mParticle - HP - Newsletter Registration Event', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Newsletter - Registration - Complete - PageView - LG5-6587') {
+                    build job: 'mParticle - Newsletter - Registration - Complete - PageView - LG5-6587', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - HP - Screen View') {
-                    build job: 'mParticle - HP - Screen View', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - HP - Page View - LG5-6542') {
+                    build job: 'mParticle - HP - Page View - LG5-6542', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Buying Guide Page') {
-                    build job: 'mParticle - BG - Buying Guide Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Car Compare - Sticky Modal Error Handling- CSIN-292') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal Error Handling- CSIN-292', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Make Body Style Page') {
-                    build job: 'mParticle - BG - Make Body Style Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Car Compare - Sticky Modal Persistence - CSIN-540') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal Persistence - CSIN-540', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Make Index Page') {
-                    build job: 'mParticle - BG - Make Index Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438') {
+                    build job: 'UIUX - BG - Car Compare - Sticky Modal UI and Functionality - CSIN-279 - CSIN-284 - CSIN-288 - CSIN-363 - CSIN-438', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Make Model Page') {
-                    build job: 'mParticle - BG - Make Model Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550') {
+                    build job: 'mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Make Model Year Page') {
-                    build job: 'mParticle - BG - Make Model Year Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Buyers Guide - Style Brand - PageView - LG5-6549') {
+                    build job: 'mParticle - Buyers Guide - Style Brand - PageView - LG5-6549', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - BG - Ranking Page') {
-                    build job: 'mParticle - BG - Ranking Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Buyers Guide - Make - PageView - LG5-6544') {
+                    build job: 'mParticle - Buyers Guide - Make - PageView - LG5-6544', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Make Model - PageView - LG5-6545') {
+                    build job: 'mParticle - Buyers Guide - Make Model - PageView - LG5-6545', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546') {
+                    build job: 'mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Style - PageView - LG5-6547') {
+                    build job: 'mParticle - Buyers Guide - Style - PageView - LG5-6547', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('mParticle - The Future - The Inevitable') {
                     build job: 'mParticle - The Future - The Inevitable', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - 404 Error Page - LG5-6585') {
+                    build job: 'mParticle - 404 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - 500 Error Page - LG5-6585') {
+                    build job: 'mParticle - 500 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Auto News Page') {
+                    build job: 'mParticle - Auto News Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Car Reviews Page') {
+                    build job: 'mParticle - Car Reviews Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Feature Page') {
+                    build job: 'mParticle - Feature Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -1892,6 +2053,16 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - BG - YMM From Find Your Car Module- LG5-5329') {
                     build job: 'UIUX - BG - YMM From Find Your Car Module- LG5-5329', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Image Gallery - PageView - LG5-6586') {
+                    build job: 'mParticle - Image Gallery - PageView - LG5-6586', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Topic Index Pages - PageView - LG5-6583') {
+                    build job: 'mParticle - Topic Index Pages - PageView - LG5-6583', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -2012,6 +2183,11 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - YMM - Ratings And Features - LG5-5498') {
                     build job: 'UIUX - YMM - Ratings And Features - LG5-5498', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('FE - '''+"${CWVFolders[index]}"+''' 0 Job') {
+                    build job: '/QA-Selenium/ONO/Core Web Vitals/'''+"${CWVFolders[index]}"+'''/0 - Run all CWV tests', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
