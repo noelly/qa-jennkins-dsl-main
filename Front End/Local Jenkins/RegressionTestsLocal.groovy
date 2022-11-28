@@ -2185,11 +2185,6 @@ servers.each { server ->
                     build job: 'UIUX - YMM - Ratings And Features - LG5-5498', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('FE - '''+"${CWVFolders[index]}"+''' 0 Job') {
-                    build job: '/QA-Selenium/ONO/Core Web Vitals/'''+"${CWVFolders[index]}"+'''/0 - Run all CWV tests', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
           ''' 
           )
         }
