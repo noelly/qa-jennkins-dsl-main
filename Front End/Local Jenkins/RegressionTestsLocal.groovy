@@ -1219,7 +1219,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - The Future - The Inevitable",
+    jobTitle: "mParticle - The Future - The Inevitable - LG5-6727",
     COMPONENT: "MT/TheFuture/ANALYTICS/mParticle", 
     TESTCASE: "mParticleTheInevitable", 
     URLFILE: "", 
@@ -1246,7 +1246,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Auto News Page",
+    jobTitle: "mParticle - Auto News Page - LG5-6520",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleNewsIndexPage", 
     URLFILE: "", 
@@ -1255,7 +1255,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Car Reviews Page",
+    jobTitle: "mParticle - Car Reviews Page - LG5-6521",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleReviewsIndexPage", 
     URLFILE: "", 
@@ -1264,7 +1264,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Feature Page",
+    jobTitle: "mParticle - Feature Page - LG5-6522",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleFeaturesIndexPage", 
     URLFILE: "", 
@@ -1752,8 +1752,8 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - The Future - The Inevitable') {
-                    build job: 'mParticle - The Future - The Inevitable', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - The Future - The Inevitable - LG5-6727') {
+                    build job: 'mParticle - The Future - The Inevitable - LG5-6727', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1767,18 +1767,18 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Auto News Page') {
-                    build job: 'mParticle - Auto News Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Auto News Page - LG5-6520') {
+                    build job: 'mParticle - Auto News Page - LG5-6520', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Car Reviews Page') {
-                    build job: 'mParticle - Car Reviews Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Car Reviews Page - LG5-6521') {
+                    build job: 'mParticle - Car Reviews Page - LG5-6521', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Feature Page') {
-                    build job: 'mParticle - Feature Page', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Feature Page - LG5-6522') {
+                    build job: 'mParticle - Feature Page - LG5-6522', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
