@@ -90,6 +90,13 @@ pipeline {
             command:
             - cat
             tty: true
+            resources:
+            limits:
+            memory: 1500Mi
+            cpu: 1500m
+            requests:
+            memory: 300Mi
+            cpu: 300m
         dnsPolicy: None
         dnsConfig:
             nameservers:
@@ -140,14 +147,6 @@ pipeline {
     }
     
   stages {
-    stage('What Node') {
-      steps {
-          container('npm') {
-            echo "we are running"
-            sh "sleep 10; node -v"
-          }
-      }
-    }
     stage('Checkout') {
         steps {
             script {
