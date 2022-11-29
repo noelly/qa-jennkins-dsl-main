@@ -39,6 +39,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/ADS/", 
     TESTCASE: "AdsOpsRequirements",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -47,6 +48,7 @@ def jobslist = [
     COMPONENT: "MT/AMPArticles/ANALYTICS/Adobe/NewsArticles", 
     TESTCASE: "ArticleGlobalElementsAMP",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -55,6 +57,7 @@ def jobslist = [
     COMPONENT: "MT/AMPArticles/ANALYTICS/Adobe/NewsArticles/", 
     TESTCASE: "MTNewsArticlesAMPList",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -63,6 +66,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleBlockquote",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -71,6 +75,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticlesElements",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -79,6 +84,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleGlobalElements",
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -87,6 +93,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleHeroImage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -95,6 +102,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleRelatedArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -103,6 +111,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleSocialMedia", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -111,6 +120,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/Adobe", 
     TESTCASE: "ArticleTitle", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -119,6 +129,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGBuyingGuideList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -127,6 +138,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGCarCompareResultsPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -135,6 +147,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGIndexPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -143,6 +156,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGPriceIndexList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -151,6 +165,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/Adobe", 
     TESTCASE: "BGRankingIndexList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -159,6 +174,7 @@ def jobslist = [
     COMPONENT: "MT/CTT/ANALYTICS/Adobe", 
     TESTCASE: "CTTArticleList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -167,6 +183,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/ANALYTICS/Adobe/", 
     TESTCASE: "MTHomePage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -175,6 +192,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/ANALYTICS/", 
     TESTCASE: "BIRequirements", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -183,6 +201,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "DiscontinuedMakeList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -191,6 +210,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "DiscontinuedMakeModelList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -199,6 +219,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "DiscontinuedMakeModelYear", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -207,6 +228,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "MakeIndexList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -215,6 +237,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "MakeModelList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -223,6 +246,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/ANALYTICS/Adobe/", 
     TESTCASE: "YearMakeModelList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -231,6 +255,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/SEO/", 
     TESTCASE: "SEORequirements", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -239,6 +264,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/SEO/", 
     TESTCASE: "SEOTextBox", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -247,6 +273,7 @@ def jobslist = [
     COMPONENT: "MT/Article/SEO/", 
     TESTCASE: "SEONewsArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -255,6 +282,7 @@ def jobslist = [
     COMPONENT: "MT/Article/SEO/", 
     TESTCASE: "SEOReviewsArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -263,6 +291,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXBlockquote", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -271,6 +300,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXEmailSignUpFooter", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -279,6 +309,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXEmailSignUpRightRail", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -287,6 +318,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXFooter", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -295,6 +327,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXHeader", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -303,6 +336,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXHeroImage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -311,6 +345,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXInlineImage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -319,6 +354,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXInlineVideo", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -327,6 +363,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXPhotoGallery", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -335,6 +372,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXRelatedArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -343,6 +381,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXSocialMedia", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -351,6 +390,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXText", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -359,6 +399,7 @@ def jobslist = [
     COMPONENT: "MT/Article/UIUX", 
     TESTCASE: "UIUXTitle", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -367,6 +408,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX", 
     TESTCASE: "UIUXTopRankingVehicleByMake", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -375,6 +417,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMMTopTen", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -383,6 +426,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX", 
     TESTCASE: "UIUXVehicleBodyTypes", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -391,6 +435,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX", 
     TESTCASE: "UIUXVehicleRankingClasses", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -399,6 +444,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXBreadcrumb", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -407,6 +453,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXCollage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -415,6 +462,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMM-CostToOwn", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -423,6 +471,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXHero", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -431,6 +480,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXHeroPricing", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -439,6 +489,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXHeroTrim", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -447,6 +498,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMM-ImageGallery", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -455,6 +507,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXMTScore", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -463,6 +516,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXNewsReviews", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -471,6 +525,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXOverview", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -479,6 +534,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXSignUpModal", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -487,6 +543,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMMSpecTable", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -495,6 +552,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXTopCompetitors", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -503,6 +561,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYearList", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -511,6 +570,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMMFromFindYourCarModule", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -519,6 +579,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageAdsPosition", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -527,6 +588,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageEmailSignUpRightColumn", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -535,6 +597,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageFindYourNextCar", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -543,6 +606,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageFooter", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -551,6 +615,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageHeader", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -559,6 +624,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageHero", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -567,6 +633,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageHotReads", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -575,6 +642,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageNewsletter", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -583,6 +651,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageRiver", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -591,6 +660,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX/", 
     TESTCASE: "UIUXhomepageTrendingVideos", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -599,6 +669,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXMakeLogos", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -607,6 +678,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXNotRated", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -615,6 +687,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXPhotoMosaicGallery", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -623,6 +696,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXRelatedArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -631,6 +705,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXStickyHeader", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -639,6 +714,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXVehicleCards", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -647,6 +723,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXVideoPlayer", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -655,6 +732,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXVideoPlayer", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
     MAKE: "nissan", 
@@ -665,6 +743,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXVideoPlayer", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -673,6 +752,7 @@ def jobslist = [
     COMPONENT: "MT/Make+Bodystyle/UIUX/", 
     TESTCASE: "UIUXVideoPlayer", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MAKE: "kia", 
@@ -683,6 +763,7 @@ def jobslist = [
     COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXPriceRange", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -691,6 +772,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX", 
     TESTCASE: "UIUXYMMRatingsAndFeatures", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -699,15 +781,18 @@ def jobslist = [
     COMPONENT: "MT/Homepage/UIUX", 
     TESTCASE: "UIUXhomepageHamburgerMenu", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
   // Analytics Verticals
+  /*
   [
     jobTitle: "Analytics - Features - Buying Advice - LG5-5275",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/BuyingAdvice/BuyingAdviceURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -716,6 +801,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/BuyingAdvice/BuyingAdviceURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -724,6 +810,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/CarLists/CarListsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -732,6 +819,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/CarLists/CarListsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -740,6 +828,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/CarProfiles/CarProfilesURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -748,6 +837,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/CarProfiles/CarProfilesURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -756,6 +846,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/Features/FeaturesURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -764,6 +855,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/Features/FeaturesURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -772,6 +864,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/LifeStyle/LifestyleURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "lowrider", 
   ],
@@ -780,6 +873,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/LifeStyle/LifestyleURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "lowrider", 
   ],
@@ -788,6 +882,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/Opinion/OpinionURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -796,6 +891,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Features/Opinion/OpinionURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -804,6 +900,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/Auctions/AuctionsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -812,6 +909,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/Auctions/AuctionsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -820,6 +918,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/Awards/AwardsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -828,6 +927,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/Awards/AwardsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -836,6 +936,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/FutureCars/FutureCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -844,14 +945,17 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/FutureCars/FutureCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
+  */
   [
     jobTitle: "Analytics - News - News - LG5 - 5282",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
-    URLFILE: "data/MotorTrend/News/News/NewsURLs.json", 
+    URLFILE: "", 
+    PAGESLUG: "/news/potential-motors-adventure-1-off-road-rv-camper-details-photos/", 
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -859,15 +963,18 @@ def jobslist = [
     jobTitle: "Analytics - News - News AMP - LG5 - 5282",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
-    URLFILE: "data/MotorTrend/News/News/NewsURLs.json", 
+    URLFILE: "", 
+    PAGESLUG: "/news/potential-motors-adventure-1-off-road-rv-camper-details-photos/", 
     AMP: "Y", 
     PAGETYPE: "", 
   ],
+  /*
   [
     jobTitle: "Analytics - News - Spy Photos - LG5 - 5282",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/SpyPhotos/SpyPhotosURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -876,6 +983,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/News/SpyPhotos/SpyPhotosURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -884,6 +992,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/ComparisonTests/ComparisonTestsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -892,6 +1001,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/ComparisonTests/ComparisonTestsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -900,6 +1010,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/FirstDrives/FirstDriveURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -908,6 +1019,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/FirstDrives/FirstDriveURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -916,6 +1028,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/FirstTest/FirstTestURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -924,6 +1037,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/FirstTest/FirstTestURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -932,6 +1046,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/Interior/InteriorURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -940,6 +1055,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/Interior/InteriorURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -948,6 +1064,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/Long-Term/LongTermURLs.json", 
+    PAGESLUG: "",
     AMP: "",
     PAGETYPE: "", 
   ],
@@ -956,14 +1073,17 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/Reviews/Long-Term/LongTermURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
+  */
   [
     jobTitle: "Analytics - Reviews - Reviews - LG5-5284",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
-    URLFILE: "data/MotorTrend/Reviews/Reviews/ReviewsURLs.json", 
+    URLFILE: "", 
+    PAGESLUG: "/reviews/2023-bmw-x7-first-drive-review/",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -971,15 +1091,18 @@ def jobslist = [
     jobTitle: "Analytics - Reviews - Reviews AMP - LG5-5284",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
-    URLFILE: "data/MotorTrend/Reviews/Reviews/ReviewsURLs.json", 
+    URLFILE: "", 
+    PAGESLUG: "/reviews/2023-bmw-x7-first-drive-review/",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
+  /*
   [
     jobTitle: "Analytics - VehicleGenres - ClassicCars - LG5-5287",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/VehicleGenres/ClassicCars/ClassicCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -988,6 +1111,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/VehicleGenres/ClassicCars/ClassicCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
@@ -996,6 +1120,7 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/VehicleGenres/ConceptCars/ConceptCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -1004,15 +1129,18 @@ def jobslist = [
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "data/MotorTrend/VehicleGenres/ConceptCars/ConceptCarsURLs.json", 
+    PAGESLUG: "",
     AMP: "Y", 
     PAGETYPE: "", 
   ],
+  */
   // CSIN Car Compare tests
   [
     jobTitle: "UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288",
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTBGIndex", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -1021,6 +1149,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTCarMatch", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -1029,6 +1158,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTMakeBodyStyle", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -1037,6 +1167,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTMakeIndex", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "", 
@@ -1046,6 +1177,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTMakeModel", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1055,6 +1187,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTMakeModelYear", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1064,6 +1197,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTPricePage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1073,6 +1207,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTRankingPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1082,6 +1217,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTStickyModalError", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1091,6 +1227,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTStickyModalPersistence", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "", 
   ],
@@ -1099,6 +1236,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/UIUX/", 
     TESTCASE: "UIUXCTStickyModalUI", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1118,6 +1256,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/ANALYTICS/mParticle", 
     TESTCASE: "mParticleHomePage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1127,6 +1266,7 @@ def jobslist = [
     COMPONENT: "MT/Homepage/ANALYTICS/mParticle", 
     TESTCASE: "mParticleNewsletter", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1136,6 +1276,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleFeatureArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1145,6 +1286,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleNewsArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1154,6 +1296,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleReviewsArticles", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1163,6 +1306,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleBGIndex", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1172,6 +1316,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleBuyingGuide", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1181,6 +1326,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeBodyStyle", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1190,6 +1336,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeIndex", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1199,6 +1346,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeModel", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1208,6 +1356,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleMakeModelYear", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1217,6 +1366,7 @@ def jobslist = [
     COMPONENT: "MT/BuyersGuide/ANALYTICS/mParticle", 
     TESTCASE: "mParticleRanking", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1226,6 +1376,7 @@ def jobslist = [
     COMPONENT: "MT/TheFuture/ANALYTICS/mParticle", 
     TESTCASE: "mParticleTheInevitable", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1235,6 +1386,7 @@ def jobslist = [
     COMPONENT: "MT/Other/ANALYTICS/mParticle", 
     TESTCASE: "mParticle404ErrorPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1244,6 +1396,7 @@ def jobslist = [
     COMPONENT: "MT/Other/ANALYTICS/mParticle", 
     TESTCASE: "mParticle500ErrorPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1253,6 +1406,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleNewsIndexPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1262,6 +1416,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleReviewsIndexPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1271,6 +1426,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleFeaturesIndexPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1280,6 +1436,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleArticleImageGallery", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1289,6 +1446,7 @@ def jobslist = [
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleTopicPage", 
     URLFILE: "", 
+    PAGESLUG: "",
     AMP: "", 
     PAGETYPE: "",
     MOBILE: "",  
@@ -1314,7 +1472,7 @@ envFolders.each{ env ->
         stringParam('COMPONENT', "${item["COMPONENT"]}", '')
         stringParam('TESTCASE', "${item["TESTCASE"]}", '')
         stringParam('SERVER', "${servers[index]}", '')
-        stringParam('PAGESLUG', '', '')
+        stringParam('PAGESLUG', "${item["PAGESLUG"]}", '')
         stringParam('URLFILE', "${item["URLFILE"]}", '')
         stringParam('PAGETYPE', "${item["PAGETYPE"]}", '')
         stringParam('AMP', "${item["AMP"]}", '')
@@ -1538,31 +1696,6 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Buying Advice AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Buying Advice AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Car Lists - LG5-5275') {
-                    build job: 'Analytics - Features - Car Lists - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Car Lists AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Car Lists AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Car Profiles - LG5-5275') {
-                    build job: 'Analytics - Features - Car Profiles - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Car Profiles AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Car Profiles AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288') {
                     build job: 'UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1593,36 +1726,6 @@ servers.each { server ->
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Features - LG5-5275') {
-                    build job: 'Analytics - Features - Features - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Features AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Features AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Lifestyle - LG5-5275') {
-                    build job: 'Analytics - Features - Lifestyle - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Lifestyle AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Lifestyle AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Opinion - LG5-5275') {
-                    build job: 'Analytics - Features - Opinion - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Features - Opinion AMP - LG5-5275') {
-                    build job: 'Analytics - Features - Opinion AMP - LG5-5275', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - Homepage - LG5-263') {
                     build job: 'Analytics - Homepage - LG5-263', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1633,36 +1736,6 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Auctions - LG5 - 5282') {
-                    build job: 'Analytics - News - Auctions - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Auctions AMP - LG5 - 5282') {
-                    build job: 'Analytics - News - Auctions AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Awards - LG5 - 5282') {
-                    build job: 'Analytics - News - Awards - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Awards AMP - LG5 - 5282') {
-                    build job: 'Analytics - News - Awards AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Future Cars - LG5 - 5282') {
-                    build job: 'Analytics - News - Future Cars - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Future Cars AMP - LG5 - 5282') {
-                    build job: 'Analytics - News - Future Cars AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - News - News - LG5 - 5282') {
                     build job: 'Analytics - News - News - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1670,26 +1743,6 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - News - News AMP - LG5 - 5282') {
                     build job: 'Analytics - News - News AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Spy Photos - LG5 - 5282') {
-                    build job: 'Analytics - News - Spy Photos - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - Spy Photos AMP - LG5 - 5282') {
-                    build job: 'Analytics - News - Spy Photos AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Comparison - LG5-5284') {
-                    build job: 'Analytics - Reviews - Comparison - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Comparison AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - Comparison AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1748,51 +1801,6 @@ servers.each { server ->
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Comparison AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - Comparison AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - First Drives - LG5-5284') {
-                    build job: 'Analytics - Reviews - First Drives - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - First Drives AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - First Drives AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - First Test - LG5-5284') {
-                    build job: 'Analytics - Reviews - First Test - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - First Test AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - First Test AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Interior - LG5-5284') {
-                    build job: 'Analytics - Reviews - Interior - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Interior AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - Interior AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Long-Term - LG5-5284') {
-                    build job: 'Analytics - Reviews - Long-Term - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Long-Term AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - Long-Term AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - Reviews - Reviews - LG5-5284') {
                     build job: 'Analytics - Reviews - Reviews - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1800,26 +1808,6 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - Reviews - Reviews AMP - LG5-5284') {
                     build job: 'Analytics - Reviews - Reviews AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - VehicleGenres - ClassicCars - LG5-5287') {
-                    build job: 'Analytics - VehicleGenres - ClassicCars - LG5-5287', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - VehicleGenres - ClassicCars AMP - LG5-5287') {
-                    build job: 'Analytics - VehicleGenres - ClassicCars AMP - LG5-5287', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - VehicleGenres - Concept Cars - LG5-5287') {
-                    build job: 'Analytics - VehicleGenres - Concept Cars - LG5-5287', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - VehicleGenres - Concept Cars AMP - LG5-5287') {
-                    build job: 'Analytics - VehicleGenres - Concept Cars AMP - LG5-5287', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
