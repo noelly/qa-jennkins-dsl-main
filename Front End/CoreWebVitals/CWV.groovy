@@ -194,7 +194,7 @@ pipeline {
                     stage('Core Web Vital test') {
                             sleep(time:"${SLEEP}" as Integer,unit:"SECONDS")
                             timeout(time: "${TEST_TIMEOUT}" as Integer, unit: 'SECONDS') {
-                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} METRIC=${METRIC} PAGESLUG=${PAGESLUG} PLATFORM=${PLATFORM} npm run devtools-kubernetes-api'
+                                sh 'COMPONENT=${COMPONENT} TESTCASE=${TESTCASE} SERVER=${SERVER} METRIC=${METRIC} PAGESLUG=${PAGESLUG} PLATFORM=${PLATFORM} npm run devtools-kubernetes'
                             }
                     }
                 }
