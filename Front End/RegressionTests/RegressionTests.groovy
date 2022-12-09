@@ -44,7 +44,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "Analytics - AMP Articles - News - Article Global Elements - LG5-5313", 
+    jobTitle: "Analytics - Articles - News AMP - Article Global Elements - LG5-5313", 
     COMPONENT: "MT/AMPArticles/ANALYTICS/Adobe/NewsArticles", 
     TESTCASE: "ArticleGlobalElementsAMP",
     URLFILE: "", 
@@ -53,7 +53,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "Analytics - AMP Articles - News Articles List - LG5-5314", 
+    jobTitle: "Analytics - Articles - News AMP - List - LG5-5314", 
     COMPONENT: "MT/AMPArticles/ANALYTICS/Adobe/NewsArticles/", 
     TESTCASE: "MTNewsArticlesAMPList",
     URLFILE: "", 
@@ -170,7 +170,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "Analytics - CTT - LG5-5312", 
+    jobTitle: "Analytics - Articles - CTT - LG5-5312", 
     COMPONENT: "MT/CTT/ANALYTICS/Adobe", 
     TESTCASE: "CTTArticleList", 
     URLFILE: "", 
@@ -269,7 +269,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "SEO - News - Articles - LG5-4673", 
+    jobTitle: "SEO - Articles - News - LG5-4673", 
     COMPONENT: "MT/Article/SEO/", 
     TESTCASE: "SEONewsArticles", 
     URLFILE: "", 
@@ -769,7 +769,7 @@ def jobslist = [
   ],
   [
     jobTitle: "UIUX - YMM - Ratings And Features - LG5-5498", 
-    COMPONENT: "MT/BuyersGuide/UIUX", 
+    COMPONENT: "MT/YMM/UIUX", 
     TESTCASE: "UIUXYMMRatingsAndFeatures", 
     URLFILE: "", 
     PAGESLUG: "",
@@ -951,7 +951,7 @@ def jobslist = [
   ],
   */
   [
-    jobTitle: "Analytics - News - News - LG5 - 5282",
+    jobTitle: "Analytics - Articles - News - LG5 - 5282",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "", 
@@ -960,7 +960,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "Analytics - News - News AMP - LG5 - 5282",
+    jobTitle: "Analytics - Articles - News AMP - LG5 - 5282",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "", 
@@ -1079,7 +1079,7 @@ def jobslist = [
   ],
   */
   [
-    jobTitle: "Analytics - Reviews - Reviews - LG5-5284",
+    jobTitle: "Analytics - Articles - Reviews - LG5-5284",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "", 
@@ -1088,7 +1088,7 @@ def jobslist = [
     PAGETYPE: "", 
   ],
   [
-    jobTitle: "Analytics - Reviews - Reviews AMP - LG5-5284",
+    jobTitle: "Analytics - Articles - Reviews AMP - LG5-5284",
     COMPONENT: "MT/ExtendedAnalytics", 
     TESTCASE: "MTVertical", 
     URLFILE: "", 
@@ -1402,7 +1402,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Auto News Page - LG5-6520",
+    jobTitle: "mParticle - Auto News Page - LG5-6578",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleNewsIndexPage", 
     URLFILE: "", 
@@ -1412,7 +1412,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Car Reviews Page - LG5-6521",
+    jobTitle: "mParticle - Car Reviews Page - LG5-6579",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleReviewsIndexPage", 
     URLFILE: "", 
@@ -1422,7 +1422,7 @@ def jobslist = [
     MOBILE: "",  
   ],
   [
-    jobTitle: "mParticle - Feature Page - LG5-6522",
+    jobTitle: "mParticle - Feature Page - LG5-6580",
     COMPONENT: "MT/Article/ANALYTICS/mParticle", 
     TESTCASE: "mParticleFeaturesIndexPage", 
     URLFILE: "", 
@@ -1621,13 +1621,13 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - AMP Articles - News - Article Global Elements - LG5-5313') {
-                    build job: 'Analytics - AMP Articles - News - Article Global Elements - LG5-5313', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - News AMP - Article Global Elements - LG5-5313') {
+                    build job: 'Analytics - Articles - News AMP - Article Global Elements - LG5-5313', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - AMP Articles - News Articles List - LG5-5314') {
-                    build job: 'Analytics - AMP Articles - News Articles List - LG5-5314', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - News AMP - List - LG5-5314') {
+                    build job: 'Analytics - Articles - News AMP - List - LG5-5314', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1638,6 +1638,11 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - Articles - Elements - LG5-711') {
                     build job: 'Analytics - Articles - Elements - LG5-711', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('Analytics - YMM - Make Index List - LG5-4605 - LG5-5298') {
+                    build job: 'Analytics - YMM - Make Index List - LG5-4605 - LG5-5298', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1691,23 +1696,23 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - CTT - LG5-5312') {
-                    build job: 'Analytics - CTT - LG5-5312', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - CTT - LG5-5312') {
+                    build job: 'Analytics - Articles - CTT - LG5-5312', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288') {
-                    build job: 'UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Homepage - LG5-263') {
+                    build job: 'Analytics - Homepage - LG5-263', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258') {
-                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Make Bodystyle - BI Requirements - CSIN-85') {
+                    build job: 'Analytics - Make Bodystyle - BI Requirements - CSIN-85', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483') {
-                    build job: 'UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - News - LG5 - 5282') {
+                    build job: 'Analytics - Articles - News - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -1726,88 +1731,18 @@ servers.each { server ->
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Homepage - LG5-263') {
-                    build job: 'Analytics - Homepage - LG5-263', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - News AMP - LG5 - 5282') {
+                    build job: 'Analytics - Articles - News AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Make Bodystyle - BI Requirements - CSIN-85') {
-                    build job: 'Analytics - Make Bodystyle - BI Requirements - CSIN-85', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - Reviews - LG5-5284') {
+                    build job: 'Analytics - Articles - Reviews - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - News - LG5 - 5282') {
-                    build job: 'Analytics - News - News - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - News - News AMP - LG5 - 5282') {
-                    build job: 'Analytics - News - News AMP - LG5 - 5282', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - Features - PageView - LG5-6580') {
-                    build job: 'mParticle - Articles - Features - PageView - LG5-6580', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - News - PageView - LG5-6578') {
-                    build job: 'mParticle - Articles - News - PageView - LG5-6578', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Articles - Reviews - PageView - LG5-6579') {
-                    build job: 'mParticle - Articles - Reviews - PageView - LG5-6579', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - PageView - LG5-6543') {
-                    build job: 'mParticle - Buyers Guide - PageView - LG5-6543', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480') {
-                    build job: 'UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481') {
-                    build job: 'UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482') {
-                    build job: 'UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958') {
-                    build job: 'UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-          ''' 
-          )
-        }
-      }
-    }
-    pipelineJob("${regressionFolder}/${envFolders[index]}/1c - Regression Set") {
-      parameters {
-        stringParam('SERVER', "${server}", '')
-        stringParam('BRANCH', 'main', '')
-      }
-      definition {
-        cps {
-          script('''
-            properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
-
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Reviews - LG5-5284') {
-                    build job: 'Analytics - Reviews - Reviews - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - Reviews - Reviews AMP - LG5-5284') {
-                    build job: 'Analytics - Reviews - Reviews AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('Analytics - Articles - Reviews AMP - LG5-5284') {
+                    build job: 'Analytics - Articles - Reviews AMP - LG5-5284', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1826,11 +1761,6 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('Analytics - YMM - Make Index List - LG5-4605 - LG5-5298') {
-                    build job: 'Analytics - YMM - Make Index List - LG5-4605 - LG5-5298', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('Analytics - YMM - Make Model List - LG5-4605 - LG5-5298') {
                     build job: 'Analytics - YMM - Make Model List - LG5-4605 - LG5-5298', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1841,18 +1771,38 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479') {
-                    build job: 'UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-479', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - 404 Error Page - LG5-6585') {
+                    build job: 'mParticle - 404 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Ranking Page - CSIN-271 - CSIN-478') {
-                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - 500 Error Page - LG5-6585') {
+                    build job: 'mParticle - 500 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460') {
-                    build job: 'UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('mParticle - Articles - Features - PageView - LG5-6580') {
+                    build job: 'mParticle - Articles - Features - PageView - LG5-6580', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Articles - News - PageView - LG5-6578') {
+                    build job: 'mParticle - Articles - News - PageView - LG5-6578', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Articles - Reviews - PageView - LG5-6579') {
+                    build job: 'mParticle - Articles - Reviews - PageView - LG5-6579', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Auto News Page - LG5-6578') {
+                    build job: 'mParticle - Auto News Page - LG5-6578', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550') {
+                    build job: 'mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -1860,7 +1810,7 @@ servers.each { server ->
         }
       }
     }
-    pipelineJob("${regressionFolder}/${envFolders[index]}/1d - Regression Set") {
+    pipelineJob("${regressionFolder}/${envFolders[index]}/1c - Regression Set") {
       parameters {
         stringParam('SERVER', "${server}", '')
         stringParam('BRANCH', 'main', '')
@@ -1870,6 +1820,71 @@ servers.each { server ->
           script('''
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Make - PageView - LG5-6544') {
+                    build job: 'mParticle - Buyers Guide - Make - PageView - LG5-6544', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Make Model - PageView - LG5-6545') {
+                    build job: 'mParticle - Buyers Guide - Make Model - PageView - LG5-6545', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546') {
+                    build job: 'mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - PageView - LG5-6543') {
+                    build job: 'mParticle - Buyers Guide - PageView - LG5-6543', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Style - PageView - LG5-6547') {
+                    build job: 'mParticle - Buyers Guide - Style - PageView - LG5-6547', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Buyers Guide - Style Brand - PageView - LG5-6549') {
+                    build job: 'mParticle - Buyers Guide - Style Brand - PageView - LG5-6549', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Car Reviews Page - LG5-6579') {
+                    build job: 'mParticle - Car Reviews Page - LG5-6579', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Feature Page - LG5-6580') {
+                    build job: 'mParticle - Feature Page - LG5-6580', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - HP - Page View - LG5-6542') {
+                    build job: 'mParticle - HP - Page View - LG5-6542', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Image Gallery - PageView - LG5-6586') {
+                    build job: 'mParticle - Image Gallery - PageView - LG5-6586', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Newsletter - Registration - Complete - PageView - LG5-6587') {
+                    build job: 'mParticle - Newsletter - Registration - Complete - PageView - LG5-6587', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - The Future - The Inevitable - LG5-6727') {
+                    build job: 'mParticle - The Future - The Inevitable - LG5-6727', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('mParticle - Topic Index Pages - PageView - LG5-6583') {
+                    build job: 'mParticle - Topic Index Pages - PageView - LG5-6583', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('SEO - Make Bodystyle - SEO Requirements - CSIN-161') {
                     build job: 'SEO - Make Bodystyle - SEO Requirements - CSIN-161', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
@@ -1881,8 +1896,8 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('SEO - News - Articles - LG5-4673') {
-                    build job: 'SEO - News - Articles - LG5-4673', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('SEO - Articles - News - LG5-4673') {
+                    build job: 'SEO - Articles - News - LG5-4673', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1926,6 +1941,26 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - Make Bodystyle - Not Rated - CSIN-108') {
+                    build job: 'UIUX - Make Bodystyle - Not Rated - CSIN-108', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+          ''' 
+          )
+        }
+      }
+    }
+    pipelineJob("${regressionFolder}/${envFolders[index]}/1d - Regression Set") {
+      parameters {
+        stringParam('SERVER', "${server}", '')
+        stringParam('BRANCH', 'main', '')
+      }
+      definition {
+        cps {
+          script('''
+            properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - Articles - Inline Video - LG5-216') {
                     build job: 'UIUX - Articles - Inline Video - LG5-216', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -1956,13 +1991,48 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Newsletter - Registration - Complete - PageView - LG5-6587') {
-                    build job: 'mParticle - Newsletter - Registration - Complete - PageView - LG5-6587', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288') {
+                    build job: 'UIUX - BG - Car Compare - Buyers Guide Index - CSIN-271 - CSIN-279 - CSIN-288', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - HP - Page View - LG5-6542') {
-                    build job: 'mParticle - HP - Page View - LG5-6542', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258') {
+                    build job: 'UIUX - BG - Car Compare - Car Match - CSIN-277 - CSIN-284 - CSIN-258', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480') {
+                    build job: 'UIUX - BG - Car Compare - Make Index - CSIN-271 - CSIN-480', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481') {
+                    build job: 'UIUX - BG - Car Compare - Make Model - CSIN-271 - CSIN-481', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482') {
+                    build job: 'UIUX - BG - Car Compare - Make Model Year - CSIN-271 - CSIN-482', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483') {
+                    build job: 'UIUX - BG - Car Compare - Make+Body Style - CSIN-271 - CSIN-483', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-478') {
+                    build job: 'UIUX - BG - Car Compare - Price Page - CSIN-271 - CSIN-478', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - RankingPage - CSIN-271 - CSIN-478') {
+                    build job: 'UIUX - BG - Car Compare - RankingPage - CSIN-271 - CSIN-478', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460') {
+                    build job: 'UIUX - BG - Car Compare - Results Page - CSIN-445 - CSIN-448 - CSIN-450 - CSIN-452 - CSIN-454 - CSIN-456 - CSIN-458 - CSIN-460', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -1981,63 +2051,18 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550') {
-                    build job: 'mParticle - Buyers Guide - Buying Guide - PageView - LG5-6550', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Top Ranking Vehicle By Make - LG5-5495') {
+                    build job: 'UIUX - BG - Top Ranking Vehicle By Make - LG5-5495', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Style Brand - PageView - LG5-6549') {
-                    build job: 'mParticle - Buyers Guide - Style Brand - PageView - LG5-6549', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Top Ten YMM - LG5-5328 - LG5-2024') {
+                    build job: 'UIUX - BG - Top Ten YMM - LG5-5328 - LG5-2024', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Make - PageView - LG5-6544') {
-                    build job: 'mParticle - Buyers Guide - Make - PageView - LG5-6544', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Make Model - PageView - LG5-6545') {
-                    build job: 'mParticle - Buyers Guide - Make Model - PageView - LG5-6545', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546') {
-                    build job: 'mParticle - Buyers Guide - Make Model Year - PageView - LG5-6546', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Buyers Guide - Style - PageView - LG5-6547') {
-                    build job: 'mParticle - Buyers Guide - Style - PageView - LG5-6547', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - The Future - The Inevitable - LG5-6727') {
-                    build job: 'mParticle - The Future - The Inevitable - LG5-6727', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - 404 Error Page - LG5-6585') {
-                    build job: 'mParticle - 404 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - 500 Error Page - LG5-6585') {
-                    build job: 'mParticle - 500 Error Page - LG5-6585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Auto News Page - LG5-6520') {
-                    build job: 'mParticle - Auto News Page - LG5-6520', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Car Reviews Page - LG5-6521') {
-                    build job: 'mParticle - Car Reviews Page - LG5-6521', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Feature Page - LG5-6522') {
-                    build job: 'mParticle - Feature Page - LG5-6522', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - BG - Vehicle Body Types - LG5-5585') {
+                    build job: 'UIUX - BG - Vehicle Body Types - LG5-5585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -2055,21 +2080,6 @@ servers.each { server ->
           script('''
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Top Ranking Vehicle By Make - LG5-5495') {
-                    build job: 'UIUX - BG - Top Ranking Vehicle By Make - LG5-5495', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Top Ten YMM - LG5-5328 - LG5-2024') {
-                    build job: 'UIUX - BG - Top Ten YMM - LG5-5328 - LG5-2024', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - BG - Vehicle Body Types - LG5-5585') {
-                    build job: 'UIUX - BG - Vehicle Body Types - LG5-5585', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - BG - Vehicle Ranking Class - LG5-5546') {
                     build job: 'UIUX - BG - Vehicle Ranking Class - LG5-5546', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
@@ -2151,13 +2161,13 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Image Gallery - PageView - LG5-6586') {
-                    build job: 'mParticle - Image Gallery - PageView - LG5-6586', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - Homepage - Ads Position - LG5-836') {
+                    build job: 'UIUX - Homepage - Ads Position - LG5-836', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('mParticle - Topic Index Pages - PageView - LG5-6583') {
-                    build job: 'mParticle - Topic Index Pages - PageView - LG5-6583', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                stage('UIUX - Homepage - Email Sign Up Right Column - LG5-841') {
+                    build job: 'UIUX - Homepage - Email Sign Up Right Column - LG5-841', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
@@ -2176,16 +2186,6 @@ servers.each { server ->
             properties([[$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], parameters([string(defaultValue: 'carbon-stg', description: '', name: 'SERVER', trim: false), string(defaultValue: 'main', description: '', name: 'BRANCH', trim: false)]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - Homepage - Ads Position - LG5-836') {
-                    build job: 'UIUX - Homepage - Ads Position - LG5-836', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - Homepage - Email Sign Up Right Column - LG5-841') {
-                    build job: 'UIUX - Homepage - Email Sign Up Right Column - LG5-841', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - Homepage - Find Your Next Car - LG5-2238') {
                     build job: 'UIUX - Homepage - Find Your Next Car - LG5-2238', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
@@ -2193,6 +2193,11 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - Homepage - Footer - LG5-4425') {
                     build job: 'UIUX - Homepage - Footer - LG5-4425', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958') {
+                    build job: 'UIUX - Homepage - Hamburger Menu - LG5-4955 - LG5-4958', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -2228,11 +2233,6 @@ servers.each { server ->
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('UIUX - Make Bodystyle - Makes Logo - CSIN-128') {
                     build job: 'UIUX - Make Bodystyle - Makes Logo - CSIN-128', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
-                }
-            }
-            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                stage('UIUX - Make Bodystyle - Not Rated - CSIN-108') {
-                    build job: 'UIUX - Make Bodystyle - Not Rated - CSIN-108', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -2281,8 +2281,13 @@ servers.each { server ->
                 }
             }
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                stage('UIUX - YMM - Ratings And Features - LG5-5498') {
+                    build job: 'UIUX - YMM - Ratings And Features - LG5-5498', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                }
+            }
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                 stage('FE - '''+"${CWVFolders[index]}"+''' 0 Job') {
-                    build job: '/QA-Selenium/ONO/Core Web Vitals/'''+"${CWVFolders[index]}"+'''/0 - Run all CWV tests', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
+                    build job: '/QA-Selenium/ONO/Core Web Vitals/'''+"${CWVFolders[index]}"+'''/Desktop/0 - Run all CWV tests - Desktop', parameters: [string(name: 'SERVER', value: String.valueOf(SERVER)), string(name: 'BRANCH', value: String.valueOf(BRANCH))]
                 }
             }
           ''' 
