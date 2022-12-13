@@ -721,53 +721,6 @@ envFolders.each{ env ->
 // 0 Jobs Creation
 index = 0;
 envFolders.each{ env ->
-    job("${mainSTFolder}/${env}/0 - Build this Job to run all Smoke Tests") {
-        parameters {
-          stringParam('BRANCH', 'main', '')
-          stringParam('SERVER', "${servers[index]}", '')
-          stringParam('SLEEP', '3', '')
-          stringParam('CHECKOUT_TIMEOUT', '60', 'Wait up to 60 seconds for checkout')
-          stringParam('BUILD_TIMEOUT', '130', '')
-          choiceParam('LOGLEVEL', ['', '--loglevel warn', '--loglevel verbose'], '')
-        }
-        steps {
-          shell('''
-            set SERVER=$SERVER
-            echo Server is $SERVER
-
-            set BRANCH=$BRANCHs
-            echo Server is $BRANCH
-
-            set SLEEP=$SLEEP
-            echo Server is $SLEEP
-
-            set CHECKOUT_TIMEOUT=$CHECKOUT_TIMEOUT
-            echo Server is $CHECKOUT_TIMEOUT
-
-            set BUILD_TIMEOUT=$BUILD_TIMEOUT
-            echo Server is $BUILD_TIMEOUT
-
-            set LOGLEVEL=$LOGLEVEL
-            echo Server is $LOGLEVEL
-          ''')
-        }
-        publishers {
-            downstreamParameterized {
-                trigger("1a - Smoke Test Set 1,1b - Smoke Test Set 2,1c - Smoke Test Set 3,1d - Smoke Test Set 4,1e - Smoke Test Set 5,1f - Smoke Test Set 6") {
-                    condition('SUCCESS')
-                    parameters {
-                        currentBuild()
-                    }
-                }
-            }
-        }
-    }
-    index += 1;
-}
-
-// 0 Jobs Creation
-index = 0;
-envFolders.each{ env ->
     job("${mainSTFolder}/${env}/0 - Build this Job to run all Smoke Tests - Local") {
         parameters {
           stringParam('BRANCH', 'main', '')
