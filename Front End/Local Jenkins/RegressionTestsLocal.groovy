@@ -5,7 +5,7 @@ def envFolders = [
   'Regression - Staging',
   'Regression - Preprod Behind Akamai',
   'Regression - Production',
-    'Regression - Production - EKS'
+  'Regression - Production - EKS'
 ];
 
 // Main Folders
