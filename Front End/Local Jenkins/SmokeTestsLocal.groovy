@@ -1,14 +1,10 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'pod1-stg', 'pod2-stg', 'pod3-stg', 'carbon-dev'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod'];
 def mainFolder = "QA-Selenium/ONO";
 def mainSTFolder = "${mainFolder}/Front End";
 def envFolders = [
     'FE Smoke Tests - Staging',
     'FE Smoke Tests - Preproduction behind Akamai',
-    'FE Smoke Tests - Production',
-    'FE Smoke Tests - Pod 1 - Staging',
-    'FE Smoke Tests - Pod 2 - Staging',
-    'FE Smoke Tests - Pod 3 - Staging',
-    'FE Smoke Tests - Dev'
+    'FE Smoke Tests - Production'
 ];
 
 // Main Folders
