@@ -1,10 +1,11 @@
-def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod'];
+def servers = ['carbon-stg', 'carbon-preprod-akamai', 'prod', 'prod-eks'];
 def mainFolder = "QA-Selenium/ONO";
 def regressionFolder = "${mainFolder}/Front End";
 def envFolders = [
   'Regression - Staging',
   'Regression - Preprod Behind Akamai',
   'Regression - Production',
+    'Regression - Production - EKS'
 ];
 
 // Main Folders
@@ -1496,7 +1497,7 @@ def setsToRun = "";
 def zeroJobIndex = 0;
 envFolders.each{ env -> 
   // Main 0 Jobs
-  job("${regressionFolder}/${env}/0 - Run all Regression tests") {
+  job("${regressionFolder}/${env}/0 - Run all Regression tests - Local") {
     parameters {
           stringParam('BRANCH', 'main', '')
           stringParam('SERVER', "${servers[zeroJobIndex]}", '')
